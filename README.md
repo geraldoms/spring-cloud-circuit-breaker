@@ -38,13 +38,13 @@ The Hystrix dashboard is accessible by accessing `http://localhost:8080/hystrix`
 as shown in the image below.
 
 <p align="center">
-  <img width="650" height="500" src="https://user-images.githubusercontent.com/13106549/43150469-020934b4-8f38-11e8-92f7-e97e8e21445a.png">
+  <img width="550" height="400" src="https://user-images.githubusercontent.com/13106549/43150469-020934b4-8f38-11e8-92f7-e97e8e21445a.png">
 </p>
 
 The image below shown some metrics from the Hystrix dashboard in real time.
 
 <p align="center">
-  <img width="650" height="500" src="https://user-images.githubusercontent.com/13106549/43150494-126256a6-8f38-11e8-88d4-bdad67c2ea33.png">
+  <img width="550" height="400" src="https://user-images.githubusercontent.com/13106549/43150494-126256a6-8f38-11e8-88d4-bdad67c2ea33.png">
 </p>
 
 ## Request samples 
