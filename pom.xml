@@ -12,5 +12,6 @@
         <module>discovery-server</module>
         <module>time-service</module>
         <module>time-app</module>
+        <module>hystrix-dashboard</module>
     </modules>
 </project>
