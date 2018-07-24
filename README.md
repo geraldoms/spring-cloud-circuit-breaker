@@ -1,16 +1,16 @@
 # Spring Cloud Circuit Breaker
 
-This is a very basic example of the use Netflix Hystrix from Spring Cloud.
+This is a very basic example of the use of Netflix Hystrix from Spring Cloud.
 It has four modules:
 
 * [Discovery-server module](https://github.com/geraldoms/spring-cloud-circuit-breaker/tree/master/discovery-server):
-This module contains the service discovery using the Netflix Eureka to keep the info to access the services.
+This module contains the service discovery using the Netflix Eureka.
 
 * [Hystrix-dashboard module](https://github.com/geraldoms/spring-cloud-circuit-breaker/tree/master/hystrix-dashboard): 
  This module contains the hystrix dashboard to monitor Hystrix metrics in real time.
 
-* [Weather-service module](https://github.com/geraldoms/spring-cloud-circuit-breaker/tree/master/time-app): 
-This module contains a small API to call the time-service for the tests.
+* [Time-app module](https://github.com/geraldoms/spring-cloud-circuit-breaker/tree/master/time-app): 
+This module contains a simple API using the Hytrix Command with a fallBack method to call the time-service.
 
 * [Time-service module](https://github.com/geraldoms/spring-cloud-circuit-breaker/tree/master/time-service): 
 This module contains the time service which returns the current date and time.
@@ -26,7 +26,7 @@ To run this example you need to execute Discovery-server module first. The order
 
 ## Usage 
 
-After running the command above (in the installation section), you can start the application by running the the following commands:   
+After running the command above (in the installation section), you can start the application by running the following commands:   
  
  1. `java -jar discovery-server/target/discovery-server-0.0.1-SNAPSHOT.jar`;
  2. `java -jar time-service/target/time-service-0.0.1-SNAPSHOT.jar`
@@ -34,7 +34,7 @@ After running the command above (in the installation section), you can start the
  4. `java -jar hystrix-dashboard/target/hystrix-dashboard-0.0.1-SNAPSHOT.jar`;
 
 After that, you can start generating some metrics accessing `http://localhost:8000/time`.
-To configure the Hystrix dashboard, you will need to access `http://localhost:8080/hystrix`, and fill in a few fields, 
+The Hystrix dashboard is accessible by accessing `http://localhost:8080/hystrix`. Some fields need to be filled, 
 as shown in the image below.
 
 <p align="center">
